@@ -1,0 +1,354 @@
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // align-content: center;
+
+
+
+    &__header {
+        // font-size: 5rem;
+        font-size: 40px;
+        // font-family: 'Share Tech Mono', monospace;
+        font-family: 'Assistant', sans-serif;
+        font-weight: 700;
+        color: white;
+    }
+
+    &__span {
+        font-weight: 400;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 20px;
+        color: #24CAFF;
+    }
+
+    &__sub-header {
+        // font-size: 3rem;
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+
+    &__container-body {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        // // font-size: 1.5rem;
+        // font-size: 16px;
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 180%;
+        opacity: 0.9;
+    }
+}
+
+.ripple {
+    background-color: #24CAFF;
+    background-image: linear-gradient(-75deg,
+            transparent 0,
+            transparent 5%,
+            rgba(255, 255, 255, 0.5) 5%,
+            rgba(255, 255, 255, 0.5) 10%,
+            transparent 10%,
+            transparent 100%,
+        );
+    background-size: 200% 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: 1.5s;
+
+    &:hover {
+        background-position: -120% 0;
+    }
+}
+
+.pos-int {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    left: 100px;
+    top: -50px;
+}
+
+.pos-abt {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    left: 100px;
+    top: 1200px;
+}
+
+.pos-con {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    left: 100px;
+    top: 3600px;
+}
+
+.blob {
+
+    filter: blur(80px);
+    // backdrop-filter: blur(150px);
+    position: absolute;
+    width: 120px;
+    height: 120px;
+
+    &--1 {
+        left: 21px;
+        top: 416px;
+        // top: 516px;
+        background-color: #24CAFF;
+       
+    }
+
+    &--2 {
+        left: 536px;
+        top: 157px;
+        background-color: #24CAFF;
+    }
+
+    &--3 {
+        left: 957px;
+        top: -31px;
+        background-color: #37FFCF;
+    }
+
+    &--4 {
+        left: 933px;
+        top: 476px;
+        background-color: #6A24FF;
+    }
+
+    &--5 {
+        left: 185px;
+        top: 1109px;
+        background: #6A24FF;
+    }
+
+    &--6 {
+        left: 1077px;
+        top: 1374px;
+        background: #24CAFF;
+    }
+
+    &--7 {
+        left: 377px;
+        top: 1774px;
+        background: #6A24FF;
+    }
+
+    &--8 {
+        left: 677px;
+        top: 2374px;
+        background-color: #37FFCF;
+    }
+
+    &--9 {
+        left: 10px;
+        top: 2074px;
+        background: #24CAFF;
+    }
+
+    &--10 {
+        left: 1177px;
+        top: 2574px;
+        background: #24CAFF;
+    }
+
+    &--11 {
+        left: 70px;
+        top: 3074px;
+        background: #6A24FF;
+    }
+
+    &--12 {
+        left: 700px;
+        top: 3574px;
+        background: #24CAFF;
+    }
+
+    &--13 {
+        left: 70px;
+        top: 4074px;
+        background: #6A24FF;
+    }
+
+    &--14 {
+        left: 500px;
+        top: 4374px;
+        background: #24CAFF;
+    }
+
+    &--15 {
+        left: 1200px;
+        top: 4074px;
+        background: #24CAFF;
+    }
+
+    &--16 {
+        left: 2021px;
+        top: 416px;
+        // top: 516px;
+        background-color: #24CAFF;
+    }
+
+    &--17 {
+        left: 2536px;
+        top: 157px;
+        background-color: #24CAFF;
+    }
+
+    &--18 {
+        left: 1957px;
+        top: -31px;
+        background-color: #37FFCF;
+    }
+
+    &--19 {
+        left: 1533px;
+        top: 476px;
+        background-color: #6A24FF;
+    }
+
+    &--20 {
+        left: 1185px;
+        top: 1109px;
+        background: #6A24FF;
+    }
+
+    &--21 {
+        left: 2077px;
+        top: 1374px;
+        background: #24CAFF;
+    }
+
+    &--22 {
+        left: 1977px;
+        top: 1774px;
+        background: #6A24FF;
+    }
+
+    &--23 {
+        left: 1677px;
+        top: 2374px;
+        background-color: #37FFCF;
+    }
+
+    &--24 {
+        left: 2010px;
+        top: 2074px;
+        background: #24CAFF;
+    }
+
+    &--25 {
+        left: 2177px;
+        top: 2574px;
+        background: #24CAFF;
+    }
+
+    &--26 {
+        left: 2070px;
+        top: 3074px;
+        background: #6A24FF;
+    }
+
+    &--27 {
+        left: 1700px;
+        top: 3574px;
+        background: #24CAFF;
+    }
+
+    &--28 {
+        left: 2070px;
+        top: 4074px;
+        background: #6A24FF;
+    }
+
+    &--29 {
+        left: 1500px;
+        top: 4374px;
+        background: #24CAFF;
+    }
+
+    &--30 {
+        left: 2300px;
+        top: 4374px;
+        background: #24CAFF;
+    }
+
+    &--animation-1 {
+        animation-name: glowing-stars;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+    }
+    &--animation-2 {
+        animation-name: glowing-stars;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-delay: 3s;
+    }
+    &--animation-3 {
+        animation-name: glowing-stars-back;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-delay: 3s;
+    }
+    &--animation-4 {
+        animation-name: glowing-stars-back;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+    }
+
+}
+
+@keyframes glowing-stars {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes glowing-stars-back {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

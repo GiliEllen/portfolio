@@ -1,0 +1,70 @@
+.contact {
+    // padding-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        &__main {
+            font-family: 'Share Tech Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .input-container {
+            display: flex;
+            flex-direction: column;
+
+
+            .label-large {
+                font-family: 'Share Tech Mono';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            .input-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 10px;
+                width: 764px;
+                height: 56px;
+                background: rgba(15, 43, 85, 0.2);
+                border-radius: 4px 4px 0px 0px;
+                border: none;
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+
+                &--text-area {
+                    width: 764px;
+                    height: 123px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+   and (max-width :420px) {
+ .contact {
+    width: 600px;
+ }
+}
