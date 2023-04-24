@@ -134,10 +134,10 @@ html, body {
 }
 
 @media only screen 
-   and (max-width :420px) {
+   and (max-width :520px) {
     .session {
         width: 600px;
-        grid-template-rows: repeat(50, 100px);
+        grid-template-rows: repeat(55, 100px);
     }
     .grid-intro {
         grid-area: 4/3/6/12;
@@ -150,10 +150,10 @@ html, body {
     }
     
     .grid-projects {
-        grid-area: 28/2/31/12;
+        grid-area: 28/2/42/12;
     }
     .grid-contact {
-       grid-area: 44/2/50/12;
+       grid-area: 50/2/55/12;
     }
     body {
         width: 600px;

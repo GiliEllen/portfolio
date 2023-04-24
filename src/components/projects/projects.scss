@@ -54,6 +54,7 @@
 
         &__main {
             width: 50%;
+
             a {
                 text-decoration: none;
             }
@@ -133,8 +134,8 @@
     height: 38px;
     border: 1px solid #24CAFF;
     border-radius: 5px;
-    background-color:var(--bodyBackgroundColor);
-    color:#24CAFF;
+    background-color: var(--bodyBackgroundColor);
+    color: #24CAFF;
     text-decoration: none;
 
     a {
@@ -144,4 +145,40 @@
     &:hover {
         background: rgba(36, 202, 255, 0.1);
     }
+}
+
+@media only screen and (max-width :520px) {
+
+    .projects_container {
+        flex-direction: column;
+    }
+
+    .projects {
+        .project {
+            flex-direction: column;
+            justify-content: center;
+            height: 500px;
+
+            &__main {
+                width: 100%;
+            }
+
+            .project__image-container {
+                margin-top: 10px;
+                width: 100%;
+                position: relative;
+    
+                img {
+                    width: 100%;
+                    position: absolute;
+                }
+            }
+        }
+        
+
+        
+    }
+
+
+
 }
