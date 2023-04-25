@@ -36,7 +36,7 @@
         /* identical to box height */
         text-transform: capitalize;
         color: #FFFFFF;
-        margin-top:100px ;
+        margin-top: 100px;
 
     }
 
@@ -75,8 +75,7 @@
     }
 }
 
-@media only screen 
-   and (max-width :420px) {
+@media only screen and (max-width :420px) {
     .skill {
         img {
             width: 50px;
@@ -86,4 +85,23 @@
     .skills__container__row {
         display: flex;
     }
+
+    .skills {
+        width: 90vw;
+        &__container {
+            width: 90vw;
+            &__row {
+                display: flex;
+            }
+        }
+        &__header {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__main {
+            margin: 0%;
+        }
+    }
+
 }

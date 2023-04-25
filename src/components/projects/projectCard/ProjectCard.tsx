@@ -18,7 +18,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, idx }) => {
       setDir("row-reverse");
     }
     if (windowSize < 500) {
-      setDir("column");
+      setDir("column-reverse");
     }
     setSrc(project.image);
   }, []);

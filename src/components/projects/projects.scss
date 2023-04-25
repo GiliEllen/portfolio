@@ -154,31 +154,58 @@
     }
 
     .projects {
+        width: 90vw;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
         .project {
             flex-direction: column;
-            justify-content: center;
             height: 500px;
+            width: 90vw;
+            height: 60vh;
+
 
             &__main {
-                width: 100%;
+                width: 90%;
+                padding-top: 20px;
             }
 
             .project__image-container {
                 margin-top: 10px;
                 width: 100%;
                 position: relative;
-    
+
                 img {
                     width: 100%;
                     position: absolute;
                 }
             }
         }
-        
-
-        
     }
 
+    .btn-project {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 80vw;
+        height: 52px;
+        /* cyan */
+        border: 1px solid #24CAFF;
+        border-radius: 5px;
 
 
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            background: rgba(36, 202, 255, 0.1);
+        }
+    }
 }

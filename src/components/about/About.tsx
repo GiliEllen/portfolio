@@ -1,22 +1,24 @@
-import React, { FC, forwardRef } from "react";
 import * as Scroll from "react-scroll";
-import MySkills from "./../mySkills/MySkills";
-import figure1 from "../../assets/images/Group.svg";
 import figure2 from "../../assets/images/Group 2.svg";
-import figure3 from "../../assets/images/Group 3.svg";
-import AboutCard from "./AboutCard";
-import rectengle from "../../assets/images/Rectangle 1.svg";
+import { FC } from "react";
 
 let Link = Scroll.Link;
 interface AboutProps {
-  handleClickNav: CallableFunction;
+  isMobile: boolean | undefined;
 }
 
-const About = () => {
+const About: FC<AboutProps> = ({ isMobile }) => {
   return (
     <div className="about grid-about">
       {/* @ts-ignore */}
       <div name="about" className="pos-abt"></div>
+      {isMobile ? (
+        <img
+          className="about__img"
+          src={figure2}
+          alt="a figure of a girl sitting"
+        />
+      ) : null}
       <div className="about__container">
         <h1 className="main-header">
           <span className="numbering">0.1.</span> Get To Know Me
@@ -40,9 +42,10 @@ const About = () => {
               digital worlds.
             </p>
           </div>
-          <img src={figure2} className="about__main__picture" alt="" />
+          {isMobile ? null : (
+            <img src={figure2} className="about__main__picture" alt="" />
+          )}
         </div>
-
       </div>
     </div>
   );
