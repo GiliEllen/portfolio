@@ -132,6 +132,10 @@ body {
         width: 768px;
         grid-template-rows: repeat(46, 100px);
     }
+
+    .header {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width :520px) {

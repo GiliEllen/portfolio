@@ -31,8 +31,9 @@ const Home = () => {
     <div className="home" name="home">
       {/* <div className="sm"></div> */}
       <div className="header--background"></div>
+      <NavBar />
       <div className="session">
-        <NavBar />
+       
         <Intro />
         {/* <div name="about" className="about"> */}
         
