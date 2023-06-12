@@ -9,7 +9,7 @@ interface NavBarProps {
 
 const NavBar = () => {
   const handleDownload = () => {
-    window.open('portfolio/src/assets/docs/Gili Menahen - Resume - FullStack Developer.pdf')
+    window.open('portfolio/src/assets/docs/Gili Menahem - Resume - FullStack Developer.pdf')
   }
 
 
