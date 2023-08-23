@@ -19,7 +19,7 @@ export const projects: Project[] = [
     header: "iDigital-project",
     image: idigital,
     info: "This is a fullstack development project that I built with another developer to create a fully functional idigital store. The project allows users to browse idigital products, add them to their cart, and checkout using Stripe.",
-    link: "https://github.com/GiliEllen/idigital-project",
+    link: "https://github.com/GiliEllen/idigital/tree/main",
     tech: ["React.js", "Redux Toolkit", "Node.js", "Express", "MySQL"],
     hover: idigitalHover
   },
